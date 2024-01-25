@@ -1,3 +1,5 @@
+//creare un arrey di oggetti  che descrive una bici e dare nome e peso
+
 const bicycles = [
     {
         name: 'corsa',
@@ -25,3 +27,11 @@ const bicycles = [
     },
 ];
 console.table(bicycles);
+
+//stampare in console la bici con peso < usando destructrng e tmplt lit
+
+
+
+
+
+
