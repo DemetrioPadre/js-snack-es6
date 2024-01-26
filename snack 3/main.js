@@ -29,8 +29,13 @@ const bicycles = [
 console.table(bicycles);
 
 //stampare in console la bici con peso < usando destructrng e tmplt lit
+let [ligtherbike] = bicycles;
 
-
+bicycles.forEach((bike) => {
+    const { weight } = bike;
+    if (weight < ligtherbike) ligtherbike = bike;
+});
+console.log(ligtherbike)
 
 
 

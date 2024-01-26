@@ -35,7 +35,10 @@ const teams = [
         foul: 0,
     },
 ];
-function generateRandomNumber(min, max) {
+for (let team of teams) {
+    0;
+    team.score = getRandomNumber(1, 30);
+    team.foul = getRandomNumber(1, 30);
     return Math.floor(Math.random() * (max - min + 1) - min);
 }
 
