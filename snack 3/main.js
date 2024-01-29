@@ -3,7 +3,7 @@
 const bicycles = [
     {
         name: 'corsa',
-        weight: 5,
+        weight: 9,
     },
     {
         name: 'mtBike',
@@ -20,22 +20,21 @@ const bicycles = [
         weight: 7,
     }, {
         name: 'bmx',
-        weight: 8,
+        weight: 4,
     }, {
         name: 'freeStyle',
         weight: 6,
     },
 ];
-console.table(bicycles);
+// console.table(bicycles);
 
 //stampare in console la bici con peso < usando destructrng e tmplt lit
-let [ligtherbike] = bicycles;
+let [ligtherBike] = bicycles;
 
 bicycles.forEach((bike) => {
-    const { weight } = bike;
-    if (weight < ligtherbike) ligtherbike = bike;
+    if (bike.weight < ligtherBike.weight) ligtherBike = bike;
 });
-console.log(ligtherbike)
+console.log(ligtherBike)
 
 
 
